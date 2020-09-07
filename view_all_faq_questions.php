@@ -6,7 +6,7 @@ $response=array();
         
         $num_rows=mysqli_num_rows($query);
         
-        if ($num == NULL) {
+        if ($num_rows == NULL) {
             $response["success"]=false;
         	$response["message"]="No Questions Found";
         	echo json_encode($response);
