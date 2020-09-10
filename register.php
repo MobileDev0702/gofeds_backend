@@ -17,7 +17,7 @@ $response = array();
         	$password = md5($_POST['password']);
     		//$date = date("d-m-y h:m:i");
     		
-    		$row=mysqli_query($conn, "insert into gf_users set gf_username='".$_POST['username']."', gf_fname='".$_POST['firstname']."', gf_lname='".$_POST['lastname']."',  gf_email='".$_POST['email']."', gf_password='".$password."', gf_rank='".$_POST['rank']."', gf_agency='".$_POST['agency']."', gf_office='".$_POST['office']."', gf_current_port='".$_POST['current_port']."', gf_desire_port='".$_POST['desire_port']."', gf_ftoken='".$_POST['ftoken']."', gf_token='".$token."', gf_device_id='".$_POST['device_id']."', gf_image=''");
+    		$row=mysqli_query($conn, "insert into gf_users set gf_username='".$_POST['username']."', gf_fname='".$_POST['firstname']."', gf_lname='".$_POST['lastname']."',  gf_email='".$_POST['email']."', gf_password='".$password."', gf_rank='".$_POST['rank']."', gf_agency='".$_POST['agency']."', gf_office='".$_POST['office']."', gf_current_port='".$_POST['current_port']."', gf_desire_port='".$_POST['desire_port']."', gf_ftoken='".$_POST['ftoken']."', gf_token='".$token."', gf_device_id='".$_POST['device_id']."', gf_image='', gf_badge=0");
     		
     		if ($row)
     		{		

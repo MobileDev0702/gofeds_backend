@@ -10,6 +10,7 @@ $response = array();
     	    $response["success"] = true;
             $response["message"] = "Answer already submitted for this Question.";
     	}else{*/
+    	    
         	$row=mysqli_query($conn, "insert into gf_forum_answers set gf_question_id='".$_POST['question_id']."', gf_user_id='".$_POST['user_id']."', gf_answer='".$_POST['answer']."', vote='".$_POST['vote']."' ");
         	
     		if($row){

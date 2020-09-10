@@ -25,6 +25,7 @@ if (isset($_POST['user_id'])){
 		$response["desire_port"] = $data['gf_desire_port'];
 		$response["token"] = $data['gf_token'];
 		$response["ftoken"] = $data['gf_ftoken'];
+		$response["device_id"] = $data['gf_device_id'];
 		
 	}else
 	{

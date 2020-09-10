@@ -1,7 +1,7 @@
 <?php 
 include 'connection.php';
 
-if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['device_id']) )
+if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['ftoken']) && isset($_POST['device_id']))
 {
     
 	$query = mysqli_query($conn, "SELECT * FROM gf_users where gf_username='".$_POST['username']."' and gf_password='".md5($_POST['password'])."' ");                 
@@ -13,7 +13,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['devi
 	$response=array();
 	if($num_users==1)
 	{
-	    $query_update = mysqli_query($conn, "UPDATE gf_users set gf_device_id='".$_POST['device_id']."' where gf_id='".$data['gf_id']."' ");
+	    $query_update = mysqli_query($conn, "UPDATE gf_users set gf_ftoken='".$_POST['ftoken']."', gf_device_id='".$_POST['device_id']."' where gf_id='".$data['gf_id']."' ");
 	    
 		$response["success"]=true;
 		$response["message"]='Logged In Successfully';
@@ -27,7 +27,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['devi
 		$response["current_port"] = $data['gf_current_port'];
 		$response["desire_port"] = $data['gf_desire_port'];
 		$response["token"] = $data['gf_token'];
-		$response["ftoken"] = $data['gf_ftoken'];
+		$response["ftoken"] = $_POST['ftoken'];
 		$response["device_id"] = $_POST['device_id'];
 		
 	}else
