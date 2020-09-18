@@ -37,6 +37,7 @@ $response = array();
     			$response["ftoken"] = $_POST['ftoken'];
     			$response["token"] = $token;
     			$response["device_id"] = $_POST['device_id'];
+    			$response["image"] = '';
             }
     		else
     		{

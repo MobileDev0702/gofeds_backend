@@ -39,7 +39,8 @@ $response=array();
             	        "user_name"=> $data_user['gf_fname'].' '.$data_user['gf_lname'],
             	        "que_user_name"=> $user_name_que,
             	        "question"=> $data['gf_question'],
-            	        "answer"=> $answ
+            	        "answer"=> $answ,
+            	        "image"=>$data_user['gf_image']
             	       ); 
             	}else{
             		$response["success"]=false;

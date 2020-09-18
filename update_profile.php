@@ -105,7 +105,7 @@ if(isset($_POST['id'])){
                     'office'=>$data['gf_office'],
     			    'current_port'=>$data['gf_current_port'],
     			    'desire_port'=>$data['gf_desire_port'],
-    			    'image' => 'https://novos.in/munish/gofeeds/images/'.$imgname
+    			    'image' => 'http://stackrage.com/gofeeds/images/'.$imgname
     			    );
     			    echo json_encode(array("success"=>true, "message"=>"User Profile Updated Successfully!", "userdata"=>$response)); 
             }else{

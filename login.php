@@ -29,6 +29,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['ftok
 		$response["token"] = $data['gf_token'];
 		$response["ftoken"] = $_POST['ftoken'];
 		$response["device_id"] = $_POST['device_id'];
+		$response["image"] = $data['gf_image'];
 		
 	}else
 	{

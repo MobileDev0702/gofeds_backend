@@ -32,7 +32,7 @@ if (isset($_POST['user_id'])){
         	    if($data['gf_image']==''){
         	        $img = "";
         	    }else{
-        	        $img = 'https://novos.in/munish/gofeeds/images/'.$data['gf_image'];
+        	        $img = $data['gf_image']; //'http://stackrage.com/gofeeds/images/'.
         	    }
         	    
         	   $response[] = array(

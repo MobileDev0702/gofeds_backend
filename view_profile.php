@@ -26,6 +26,7 @@ if (isset($_POST['user_id'])){
 		$response["token"] = $data['gf_token'];
 		$response["ftoken"] = $data['gf_ftoken'];
 		$response["device_id"] = $data['gf_device_id'];
+		$response["image"] = $data['gf_image'];
 		
 	}else
 	{

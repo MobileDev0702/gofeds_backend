@@ -32,7 +32,8 @@ $user_name_que = $q_data_user['gf_fname'].' '.$q_data_user['gf_lname'];
 			"vote"=> $data['vote'],
 	        "user_name"=> $data_user['gf_fname'].' '.$data_user['gf_lname'], 
 	        "username"=> $data_user['gf_username'],
-	        "answer"=> $data['gf_answer']
+	        "answer"=> $data['gf_answer'],
+	        "image"=>$data_user['gf_image']
 	       );
     	}
 	
